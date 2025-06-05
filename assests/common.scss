@@ -57,66 +57,71 @@ body {
             }
         }
 
-  
+
 
         .contact-us-button {
-  button {
-    border: unset;
-    background: #c6c1ff;
-    padding: 5px 19px;
-    border-radius: 13px;
-    position: relative;
-    overflow: hidden;
-    animation: heartbeat 1.5s infinite;
-        box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.4784313725), 0px 2px 4px rgba(87, 75, 172, 0.2588235294);
+            button {
+                border: unset;
+                background: #c6c1ff;
+                padding: 5px 19px;
+                border-radius: 13px;
+                position: relative;
+                overflow: hidden;
+                animation: heartbeat 1.5s infinite;
+                box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.4784313725), 0px 2px 4px rgba(87, 75, 172, 0.2588235294);
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -75%;
-      width: 50%;
-      height: 100%;
-      background: linear-gradient(
-        120deg,
-        rgba(255, 255, 255, 0.3) 0%,
-        rgba(255, 255, 255, 0.6) 50%,
-        rgba(255, 255, 255, 0.3) 100%
-      );
-      transform: skewX(-20deg);
-      animation: reflect 2s infinite;
-    }
-  }
-}
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -75%;
+                    width: 50%;
+                    height: 100%;
+                    background: linear-gradient(120deg,
+                            rgba(255, 255, 255, 0.3) 0%,
+                            rgba(255, 255, 255, 0.6) 50%,
+                            rgba(255, 255, 255, 0.3) 100%);
+                    transform: skewX(-20deg);
+                    animation: reflect 2s infinite;
+                }
+            }
+        }
 
-// Heartbeat keyframes
-@keyframes heartbeat {
-  0%, 100% {
-    transform: scale(1);
-  }
-  14% {
-    transform: scale(1.1);
-  }
-  28% {
-    transform: scale(1);
-  }
-  42% {
-    transform: scale(1.1);
-  }
-  70% {
-    transform: scale(1);
-  }
-}
+        // Heartbeat keyframes
+        @keyframes heartbeat {
 
-// Reflect animation keyframes
-@keyframes reflect {
-  0% {
-    left: -75%;
-  }
-  100% {
-    left: 125%;
-  }
-}
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            14% {
+                transform: scale(1.1);
+            }
+
+            28% {
+                transform: scale(1);
+            }
+
+            42% {
+                transform: scale(1.1);
+            }
+
+            70% {
+                transform: scale(1);
+            }
+        }
+
+        // Reflect animation keyframes
+        @keyframes reflect {
+            0% {
+                left: -75%;
+            }
+
+            100% {
+                left: 125%;
+            }
+        }
 
     }
 }
