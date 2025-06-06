@@ -1,0 +1,156 @@
+@import "font.css";
+.new-navbar .our-navbar {
+  background-color: #F6F2FD;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.new-navbar .logo-content .logo {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.new-navbar .logo-content .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.new-navbar .logo-content span a {
+  text-decoration: none;
+  color: #000;
+}
+.new-navbar .nav-content ul li {
+  list-style: none;
+  padding: 5px 13px;
+  border-radius: 10px;
+  box-shadow: -3px -6px 16px 0px rgba(253, 253, 253, 0.6901960784), 9px 5px 14px 0px rgba(0, 0, 0, 0.1490196078);
+  transition: 7s;
+}
+.new-navbar .nav-content ul li:hover {
+  box-shadow: inset -3px -6px 16px 0px rgba(253, 253, 253, 0.6901960784), inset 9px 5px 14px 0px rgba(0, 0, 0, 0.1490196078);
+  transition: 7s;
+}
+.new-navbar .nav-content ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.new-navbar .nav-content .contact-us-button button {
+  border: unset;
+  background: #c6c1ff;
+  padding: 5px 19px;
+  border-radius: 13px;
+  position: relative;
+  overflow: hidden;
+  animation: heartbeat 1.5s infinite;
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.4784313725), 0px 2px 4px rgba(87, 75, 172, 0.2588235294);
+}
+.new-navbar .nav-content .contact-us-button button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.3) 100%);
+  transform: skewX(-20deg);
+  animation: reflect 2s infinite;
+}
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.1);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+@keyframes reflect {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+.new-navbar .offcanvas-button {
+  border: unset;
+  background: #c6c1ff;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.new-navbar .offcanvas-button div {
+  width: 37px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+.new-navbar .offcanvas-button div:first-child {
+  margin-top: 0px;
+}
+
+.offcanvas-body-new .offcanvas-header {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+}
+.offcanvas-body-new .title a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+}
+.offcanvas-body-new .title a::before {
+  content: "";
+  position: absolute;
+  background: red;
+  height: 2px;
+  bottom: 0px;
+  transition: width 5s;
+}
+.offcanvas-body-new .title a:hover::before {
+  width: 100%;
+  transition: width 5s !important;
+}
+.offcanvas-body-new .offcanvas-body {
+  background-color: #F6F2FD;
+}
+.offcanvas-body-new .offcanvas-body ul li {
+  list-style: none;
+  background-color: #c6c1ff;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.offcanvas-body-new .offcanvas-body ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.offcanvas-body-new .offcanvas-body button {
+  border: unset;
+  background: #c6c1ff;
+  padding: 5px 19px;
+  border-radius: 13px;
+  position: relative;
+  overflow: hidden;
+  animation: heartbeat 1.5s infinite;
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.4784313725), 0px 2px 4px rgba(87, 75, 172, 0.2588235294);
+}
+.offcanvas-body-new .offcanvas-body button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.3) 100%);
+  transform: skewX(-20deg);
+  animation: reflect 2s infinite;
+}
+
+/*# sourceMappingURL=common.css.map */
