@@ -153,4 +153,11 @@
   animation: reflect 2s infinite;
 }
 
+.home-banner {
+  min-height: 600px;
+}
+.home-banner .about-content h2:nth-child(2) {
+  font-size: 60px;
+}
+
 /*# sourceMappingURL=common.css.map */
