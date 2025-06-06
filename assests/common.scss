@@ -157,14 +157,14 @@ body {
                 background: red;
                 height: 2px;
                 bottom: 0px;
-              transition: width 5s;
+                transition: width 5s;
             }
 
             &:hover {
                 &::before {
-                    
+
                     width: 100%;
-                  transition: width 5s !important;
+                    transition: width 5s !important;
                 }
             }
         }
