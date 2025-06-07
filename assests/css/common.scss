@@ -12,7 +12,7 @@ body {
 
 .home-banner {
     min-height: 600px;
-    
+
     color: #fff;
 
     .home-bannner-box {
@@ -118,4 +118,96 @@ body {
             }
         }
     }
+
+
+
+    .round-balls {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: rgba(255, 0, 0, 0.4);
+        backdrop-filter: blur(33px);
+        z-index: -1;
+        pointer-events: none;
+
+    }
+
+
+
+    .round-balls:nth-child(odd) {
+        animation: moveClockwise 5s linear infinite;
+    }
+
+    .round-balls:nth-child(even) {
+        animation: moveCounterClockwise 5s linear infinite;
+        background-color: greenyellow;
+        display: none;
+    }
+
+
+
+    @keyframes moveClockwise {
+        0% {
+            top: 0;
+            left: 0;
+        }
+
+        25% {
+            top: 0;
+            left: 100%;
+            transform: translateX(-100%);
+        }
+
+        50% {
+            top: 100%;
+            left: 100%;
+            transform: translate(-100%, -100%);
+        }
+
+        75% {
+            top: 100%;
+            left: 0;
+            transform: translateY(-100%);
+        }
+
+        100% {
+            top: 0;
+            left: 0;
+            transform: none;
+        }
+    }
+
+    @keyframes moveCounterClockwise {
+        0% {
+            top: 0;
+            left: 0;
+        }
+
+        25% {
+            top: 100%;
+            left: 0;
+            transform: translateY(-100%);
+        }
+
+        50% {
+            top: 100%;
+            left: 100%;
+            transform: translate(-100%, -100%);
+        }
+
+        75% {
+            top: 0;
+            left: 100%;
+            transform: translateX(-100%);
+        }
+
+        100% {
+            top: 0;
+            left: 0;
+            transform: none;
+        }
+    }
+
+
 }
