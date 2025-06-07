@@ -1,7 +1,28 @@
 .new-navbar {
+
     .our-navbar {
-        background-color: #F6F2FD;
-           box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        // background-color: #F6F2FD;
+        //    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        background: rgba(242, 246, 255, .3803921569);
+        box-shadow: 0px 10px 22px rgba(0, 0, 0, .0784313725);
+        backdrop-filter: blur(5px);
+        border: 2px solid #fff;
+          transition: background 0.4s ease, box-shadow 0.4s ease;
+
+
+        &.active {
+            // background-color: #F6F2FD;
+             background: linear-gradient(313deg, #6a3b8b, #664ab9);
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+              transition: background 0.4s ease, box-shadow 0.4s ease;
+
+
+            // a {
+            //     color: black !important;
+            //       transition: background 0.4s ease, box-shadow 0.4s ease;
+
+            // }
+        }
     }
 
     .logo-content {
@@ -21,7 +42,7 @@
         span {
             a {
                 text-decoration: none;
-                color: #000;
+                color: #fff;
             }
         }
     }
@@ -42,7 +63,7 @@
 
                 a {
                     text-decoration: none;
-                    color: #000;
+                    color: #fff;
                 }
             }
         }
@@ -134,9 +155,10 @@
 }
 
 .offcanvas-body-new {
-    .offcanvas-header{
+    .offcanvas-header {
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
     }
+
     .title {
         a {
             text-decoration: none;
