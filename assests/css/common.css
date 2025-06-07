@@ -153,4 +153,83 @@
   animation: reflect 2s infinite;
 }
 
+body {
+  background-color: #F6F2FD;
+}
+
+.home-banner {
+  min-height: 600px;
+}
+.home-banner .about-content h2:nth-child(2) {
+  font-size: 60px;
+  font-weight: bold;
+  color: #6E40C9;
+  background-image: linear-gradient(45deg, #6E40C9, #351B69 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (min-width: 768px) {
+  .home-banner .about-content h2:nth-child(2) {
+    font-size: 70px;
+  }
+}
+.home-banner .about-content .button-style button {
+  border: 1px solid #884ff3;
+  padding: 10px 30px;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  color: #884ff3;
+}
+.home-banner .about-content .social-media a {
+  border: 1px solid #884ff3;
+  border-radius: 50%;
+  padding: 3px 11px 6px 11px;
+  transition: 0.9s;
+}
+.home-banner .about-content .social-media a:hover {
+  transform: translateY(-10px);
+  transition: 0.9s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  background-color: #884ff3;
+  border-radius: 10px !important;
+}
+.home-banner .about-content .social-media a:hover i {
+  color: #fff;
+}
+.home-banner .about-content .social-media a i {
+  font-size: 12px;
+  color: #884ff3;
+}
+.home-banner .banner-background {
+  background-color: #000;
+  padding: 10px;
+  height: calc(100% + 10px);
+}
+@media (min-width: 991px) {
+  .home-banner .banner-background {
+    transform: rotate(3deg);
+  }
+}
+.home-banner .banner-background .banner-image {
+  width: 300px;
+  height: 336px;
+}
+@media (min-width: 991px) {
+  .home-banner .banner-background .banner-image {
+    transform: translateX(68px);
+  }
+}
+.home-banner .banner-background .banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 991px) {
+  .home-banner .banner-background .banner-image img {
+    rotate: -5deg;
+  }
+}
+
 /*# sourceMappingURL=common.css.map */
