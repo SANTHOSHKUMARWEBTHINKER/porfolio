@@ -15,7 +15,7 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 5,
   spaceBetween: 30,
   loop: true,
-  speed: 10000, // duration of transition (ms)
+  speed: 4000, // duration of transition (ms)
   autoplay: {
   delay: 1, // set to 1ms for continuous movement
   disableOnInteraction: false,
