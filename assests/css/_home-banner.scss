@@ -87,9 +87,9 @@
         }
 
         .banner-image {
+            transform: translateX(41px);
 
-
-            @media (min-width: 991px) {
+            @media (min-width: 563px) {
                 width: 300px;
                 height: 336px;
                 transform: translateX(68px);

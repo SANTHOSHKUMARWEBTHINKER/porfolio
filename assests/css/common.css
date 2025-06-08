@@ -233,7 +233,10 @@
     transform: rotate(3deg);
   }
 }
-@media (min-width: 991px) {
+.home-banner .banner-background .banner-image {
+  transform: translateX(41px);
+}
+@media (min-width: 563px) {
   .home-banner .banner-background .banner-image {
     width: 300px;
     height: 336px;
