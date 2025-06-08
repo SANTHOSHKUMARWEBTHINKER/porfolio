@@ -161,10 +161,6 @@
   animation: reflect 2s infinite;
 }
 
-body {
-  background: linear-gradient(313deg, #6a3b8b, #664ab9);
-}
-
 .home-banner {
   min-height: 600px;
   color: #fff;
@@ -323,6 +319,40 @@ body {
     left: 0;
     transform: none;
   }
+}
+
+body {
+  background: linear-gradient(313deg, #6a3b8b, #664ab9);
+}
+
+.swiper-body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper-body {
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.swiper-body .swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-body .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-body .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=common.css.map */
