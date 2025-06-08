@@ -324,10 +324,6 @@
   }
 }
 
-body {
-  background: linear-gradient(313deg, #6a3b8b, #664ab9);
-}
-
 .swiper-body {
   position: relative;
   height: 100%;
@@ -397,6 +393,10 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+body {
+  background: linear-gradient(313deg, #6a3b8b, #664ab9);
 }
 
 /*# sourceMappingURL=common.css.map */
