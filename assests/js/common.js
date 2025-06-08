@@ -15,10 +15,11 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 5,
   spaceBetween: 30,
   loop: true,
-  speed: 4000, // duration of transition (ms)
+  speed: 10000, // duration of transition (ms)
   autoplay: {
-    delay: 1, // set to 1ms for continuous movement
-    disableOnInteraction: false,
+  delay: 1, // set to 1ms for continuous movement
+  disableOnInteraction: false,
+  reverseDirection: true, // Add this line to make it run right side
   },
   freeMode: true,
   freeModeMomentum: false,
@@ -38,7 +39,7 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 15,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 20,
     },
     1024: {
