@@ -173,6 +173,9 @@
   transform: skewX(-20deg);
   animation: reflect 2s infinite;
 }
+.offcanvas-body-new .our-heaader {
+  border-top-right-radius: 50px;
+}
 
 .home-banner {
   min-height: 600px;
