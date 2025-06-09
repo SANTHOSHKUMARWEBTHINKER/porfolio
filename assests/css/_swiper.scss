@@ -28,6 +28,10 @@
                 -webkit-text-fill-color: transparent;
             }
         }
+
+        .our-wrapper {
+            transition-timing-function: linear !important;
+        }
     }
 
     .our-slide {
@@ -67,7 +71,7 @@
 
     .side-arrow {
         position: absolute;
-       right: -35px;
+        right: -35px;
 
 
         .side-arrow-image {
