@@ -177,6 +177,29 @@
   border-top-right-radius: 50px;
 }
 
+.our-modal .modal-header {
+  border-bottom: 2px solid #fff;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.our-modal .our-modal-content {
+  background: linear-gradient(313deg, #6a3b8b, #664ab9);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  opacity: 1;
+  backdrop-filter: blur(5px);
+}
+.our-modal .modal-button button {
+  border: 1px solid #884ff3;
+  padding: 10px 30px;
+  font-weight: bold;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  color: #884ff3;
+}
+
 .home-banner {
   min-height: 600px;
   color: #fff;

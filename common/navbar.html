@@ -19,7 +19,7 @@
                     <li><a href="#">Testimonials</a></li>
                 </ul>
                 <div class="contact-us-button my-auto">
-                    <button>
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
                         contactus
                     </button>
                 </div>
@@ -57,10 +57,45 @@
             <li><a href="#">Testimonials</a></li>
         </ul>
         <div class="contact-us-button mx-auto mt-5 d-flex justify-content-center">
-            <button>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
                 contactus
             </button>
         </div>
     </div>
 
+</div>
+
+<!-- modal -->
+
+
+<div class="modal fade our-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content our-modal-content">
+            <div class="modal-header p-4">
+                <h1 class="modal-title fs-5 text-center text-white" id="exampleModalLabel">New message</h1>
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body px-4">
+                <form>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label  text-white fw-bold">Name:</label>
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Enter your name">
+                    </div>
+                       <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label  text-white fw-bold">Email:</label>
+                        <input type="email" class="form-control" id="recipient-name" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label  text-white fw-bold">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                    <div class="modal-button d-flex justify-content-center">
+                      <button>Submit</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
 </div>
