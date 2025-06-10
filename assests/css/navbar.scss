@@ -278,4 +278,45 @@
             color: #884ff3;
         }
     }
+    //form-validation
+.validation-form {
+    display: none;
+    transition: 0.9s;
+
+    &.active {
+        display: block;
+        color: red;
+
+    }
+}
+.validation-form-two {
+    display: none;
+    transition: 0.9s;
+
+    &.active {
+        display: block;
+        color: red;
+
+    }
+}
+.validation-form-three {
+    display: none;
+    transition: 0.9s;
+
+    &.active {
+        display: block;
+        color: red;
+
+    }
+}
+.validation-form-final {
+    opacity: 0;
+    transition: 0.9s;
+
+    &.active {
+        opacity: 1;
+        color: red;
+
+    }
+}
 }
