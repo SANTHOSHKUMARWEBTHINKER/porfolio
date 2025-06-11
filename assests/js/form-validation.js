@@ -1,5 +1,5 @@
-
-
+//form validation
+// This script validates a form with three fields: name, email, and message.
 document.addEventListener('DOMContentLoaded', function () {
     const validationForm = document.querySelector('.validation-form');
     const validationFormtwo = document.querySelector('.validation-form-two');
@@ -8,9 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const nameInput = document.getElementById("name");
     const emailInput = document.getElementById("email");
     const messageInput = document.getElementById("message");
-    const formWrapper = document.querySelector('.validation-form-wrapper'); // Add your form wrapper class or id here
 
-    // Remove 'active' class when any input changes
+    // Hide validation messages when user types
     [nameInput, emailInput, messageInput].forEach(input => {
         input.addEventListener('input', function () {
             validationForm.classList.remove('active');
@@ -21,41 +20,43 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.getElementById('button-click').addEventListener('click', function (e) {
-        var avalue = nameInput.value;
-        var bvalue = emailInput.value;
-        var cvalue = messageInput.value;
+        const avalue = nameInput.value.trim();
+        const bvalue = emailInput.value.trim();
+        const cvalue = messageInput.value.trim();
 
         let hasError = false;
-        let hasErrortwo = false;
-        let hasErrorthree = false;
 
+        // Reset previous errors
+        validationForm.classList.remove('active');
+        validationFormtwo.classList.remove('active');
+        validationFormthree.classList.remove('active');
+        validationFormfinal.classList.remove('active');
+
+        // Validate Name
         if (avalue === "" || !isNaN(avalue)) {
+            validationForm.classList.add('active');
             hasError = true;
         }
-        if (bvalue === "" || !isNaN(bvalue)) {
-            hasErrortwo = true;
-        }
-        if (cvalue === "" || !isNaN(cvalue)) {
-            hasErrorthree = true;
-        }
 
-        if (hasError) {
-            validationForm.classList.add('active');
-            e.preventDefault();
-        }
-        if (hasErrortwo) {
+        // Validate Email
+        if (bvalue === "" || !bvalue.includes('@')) {
             validationFormtwo.classList.add('active');
-            e.preventDefault();
+            hasError = true;
         }
-        if (hasErrorthree) {
+
+        // Validate Message
+        if (cvalue === "") {
             validationFormthree.classList.add('active');
-            e.preventDefault();
+            hasError = true;
         }
 
-        if (!hasError && !hasErrortwo && !hasErrorthree) {
-            validationFormfinal.classList.add('active');
+        // If there are errors, prevent form submission
+        if (hasError) {
             e.preventDefault();
-
+        } else {
+            // Optionally show final success message before actual submit
+            validationFormfinal.classList.add('active');
+            // Let the form submit naturally
         }
     });
 });
