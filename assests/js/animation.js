@@ -6,4 +6,4 @@ anime({
     delay: anime.stagger(300),
     duration: 1500,
     easing: 'spring(1, 80, 10, 0)',
-});
+}); 
