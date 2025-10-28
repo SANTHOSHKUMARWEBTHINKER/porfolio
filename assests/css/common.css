@@ -518,6 +518,96 @@
   object-fit: cover;
 }
 
+/* Child cards */
+.animation-card-parent-most-viewed.active .animation-card,
+.animation-card-parent-our-community.active .animation-card,
+.animation-card-parent-offers.active .animation-card,
+.animation-card-parent-just-booked.active .animation-card,
+.animation-card-parent.active .animation-card,
+.animation-card-parent-experience.active .animation-card {
+  opacity: 0;
+  transform: translateY(22px) scale(0.95);
+  /* Animation properties */
+  animation-name: slideUpFade;
+  animation-duration: 1.4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear(0, 0.49 7.4%, 0.864 15.3%, 1.005 19.4%, 1.12 23.7%, 1.206 28.1%, 1.267 32.8%, 1.296 36.4%, 1.311 40.2%, 1.313 44.2%, 1.301 48.6%, 1.252 56.9%, 1.105 74.4%, 1.048 82.5%, 1.011 91.1%, 1);
+}
+
+/* Stagger effect using nth-child */
+.animation-card-parent-offers .animation-card:nth-child(1), .animation-card-parent-just-booked .animation-card:nth-child(1), .animation-card-parent-most-viewed .animation-card:nth-child(1), .animation-card-parent .animation-card:nth-child(1), .animation-card-parent-experience .animation-card:nth-child(1), .animation-card-parent-our-community .animation-card:nth-child(1) {
+  animation-delay: calc(0.22s * (1 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(2), .animation-card-parent-just-booked .animation-card:nth-child(2), .animation-card-parent-most-viewed .animation-card:nth-child(2), .animation-card-parent .animation-card:nth-child(2), .animation-card-parent-experience .animation-card:nth-child(2), .animation-card-parent-our-community .animation-card:nth-child(2) {
+  animation-delay: calc(0.22s * (2 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(3), .animation-card-parent-just-booked .animation-card:nth-child(3), .animation-card-parent-most-viewed .animation-card:nth-child(3), .animation-card-parent .animation-card:nth-child(3), .animation-card-parent-experience .animation-card:nth-child(3), .animation-card-parent-our-community .animation-card:nth-child(3) {
+  animation-delay: calc(0.22s * (3 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(4), .animation-card-parent-just-booked .animation-card:nth-child(4), .animation-card-parent-most-viewed .animation-card:nth-child(4), .animation-card-parent .animation-card:nth-child(4), .animation-card-parent-experience .animation-card:nth-child(4), .animation-card-parent-our-community .animation-card:nth-child(4) {
+  animation-delay: calc(0.22s * (4 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(5), .animation-card-parent-just-booked .animation-card:nth-child(5), .animation-card-parent-most-viewed .animation-card:nth-child(5), .animation-card-parent .animation-card:nth-child(5), .animation-card-parent-experience .animation-card:nth-child(5), .animation-card-parent-our-community .animation-card:nth-child(5) {
+  animation-delay: calc(0.22s * (5 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(6), .animation-card-parent-just-booked .animation-card:nth-child(6), .animation-card-parent-most-viewed .animation-card:nth-child(6), .animation-card-parent .animation-card:nth-child(6), .animation-card-parent-experience .animation-card:nth-child(6), .animation-card-parent-our-community .animation-card:nth-child(6) {
+  animation-delay: calc(0.22s * (6 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(7), .animation-card-parent-just-booked .animation-card:nth-child(7), .animation-card-parent-most-viewed .animation-card:nth-child(7), .animation-card-parent .animation-card:nth-child(7), .animation-card-parent-experience .animation-card:nth-child(7), .animation-card-parent-our-community .animation-card:nth-child(7) {
+  animation-delay: calc(0.22s * (7 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(8), .animation-card-parent-just-booked .animation-card:nth-child(8), .animation-card-parent-most-viewed .animation-card:nth-child(8), .animation-card-parent .animation-card:nth-child(8), .animation-card-parent-experience .animation-card:nth-child(8), .animation-card-parent-our-community .animation-card:nth-child(8) {
+  animation-delay: calc(0.22s * (8 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(9), .animation-card-parent-just-booked .animation-card:nth-child(9), .animation-card-parent-most-viewed .animation-card:nth-child(9), .animation-card-parent .animation-card:nth-child(9), .animation-card-parent-experience .animation-card:nth-child(9), .animation-card-parent-our-community .animation-card:nth-child(9) {
+  animation-delay: calc(0.22s * (9 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(10), .animation-card-parent-just-booked .animation-card:nth-child(10), .animation-card-parent-most-viewed .animation-card:nth-child(10), .animation-card-parent .animation-card:nth-child(10), .animation-card-parent-experience .animation-card:nth-child(10), .animation-card-parent-our-community .animation-card:nth-child(10) {
+  animation-delay: calc(0.22s * (10 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(11), .animation-card-parent-just-booked .animation-card:nth-child(11), .animation-card-parent-most-viewed .animation-card:nth-child(11), .animation-card-parent .animation-card:nth-child(11), .animation-card-parent-experience .animation-card:nth-child(11), .animation-card-parent-our-community .animation-card:nth-child(11) {
+  animation-delay: calc(0.22s * (11 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(12), .animation-card-parent-just-booked .animation-card:nth-child(12), .animation-card-parent-most-viewed .animation-card:nth-child(12), .animation-card-parent .animation-card:nth-child(12), .animation-card-parent-experience .animation-card:nth-child(12), .animation-card-parent-our-community .animation-card:nth-child(12) {
+  animation-delay: calc(0.22s * (12 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(13), .animation-card-parent-just-booked .animation-card:nth-child(13), .animation-card-parent-most-viewed .animation-card:nth-child(13), .animation-card-parent .animation-card:nth-child(13), .animation-card-parent-experience .animation-card:nth-child(13), .animation-card-parent-our-community .animation-card:nth-child(13) {
+  animation-delay: calc(0.22s * (13 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(14), .animation-card-parent-just-booked .animation-card:nth-child(14), .animation-card-parent-most-viewed .animation-card:nth-child(14), .animation-card-parent .animation-card:nth-child(14), .animation-card-parent-experience .animation-card:nth-child(14), .animation-card-parent-our-community .animation-card:nth-child(14) {
+  animation-delay: calc(0.22s * (14 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(15), .animation-card-parent-just-booked .animation-card:nth-child(15), .animation-card-parent-most-viewed .animation-card:nth-child(15), .animation-card-parent .animation-card:nth-child(15), .animation-card-parent-experience .animation-card:nth-child(15), .animation-card-parent-our-community .animation-card:nth-child(15) {
+  animation-delay: calc(0.22s * (15 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(16), .animation-card-parent-just-booked .animation-card:nth-child(16), .animation-card-parent-most-viewed .animation-card:nth-child(16), .animation-card-parent .animation-card:nth-child(16), .animation-card-parent-experience .animation-card:nth-child(16), .animation-card-parent-our-community .animation-card:nth-child(16) {
+  animation-delay: calc(0.22s * (16 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(17), .animation-card-parent-just-booked .animation-card:nth-child(17), .animation-card-parent-most-viewed .animation-card:nth-child(17), .animation-card-parent .animation-card:nth-child(17), .animation-card-parent-experience .animation-card:nth-child(17), .animation-card-parent-our-community .animation-card:nth-child(17) {
+  animation-delay: calc(0.22s * (17 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(18), .animation-card-parent-just-booked .animation-card:nth-child(18), .animation-card-parent-most-viewed .animation-card:nth-child(18), .animation-card-parent .animation-card:nth-child(18), .animation-card-parent-experience .animation-card:nth-child(18), .animation-card-parent-our-community .animation-card:nth-child(18) {
+  animation-delay: calc(0.22s * (18 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(19), .animation-card-parent-just-booked .animation-card:nth-child(19), .animation-card-parent-most-viewed .animation-card:nth-child(19), .animation-card-parent .animation-card:nth-child(19), .animation-card-parent-experience .animation-card:nth-child(19), .animation-card-parent-our-community .animation-card:nth-child(19) {
+  animation-delay: calc(0.22s * (19 - 1));
+}
+.animation-card-parent-offers .animation-card:nth-child(20), .animation-card-parent-just-booked .animation-card:nth-child(20), .animation-card-parent-most-viewed .animation-card:nth-child(20), .animation-card-parent .animation-card:nth-child(20), .animation-card-parent-experience .animation-card:nth-child(20), .animation-card-parent-our-community .animation-card:nth-child(20) {
+  animation-delay: calc(0.22s * (20 - 1));
+}
+
+/* Add more nth-child rules as needed for more cards */
+/* Keyframes */
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.93);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 body {
   background: linear-gradient(313deg, #6a3b8b, #664ab9);
   font-family: "Zalando Sans SemiExpanded", sans-serif;
